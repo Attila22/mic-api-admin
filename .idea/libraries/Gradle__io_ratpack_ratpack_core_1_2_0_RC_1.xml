@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.ratpack:ratpack-core:1.2.0-RC-1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ratpack/ratpack-core/1.2.0-RC-1/98412e6422686651fb789ede5540bb7450df89a4/ratpack-core-1.2.0-RC-1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ratpack/ratpack-core/1.2.0-RC-1/f997cbe4196c20a37f5a833cfd808b3dcadfbf69/ratpack-core-1.2.0-RC-1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

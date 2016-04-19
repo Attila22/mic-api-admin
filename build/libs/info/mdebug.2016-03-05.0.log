@@ -1,0 +1,58 @@
+00:15:54.004 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+00:15:54.040 - Closing connection org.postgresql.jdbc.PgConnection@71a67281
+00:15:54.040 - Closing connection org.postgresql.jdbc.PgConnection@4841a095
+00:15:54.044 - Closing connection org.postgresql.jdbc.PgConnection@468647ed
+00:15:54.044 - Closing connection org.postgresql.jdbc.PgConnection@3ac15c58
+00:15:54.045 - Closing connection org.postgresql.jdbc.PgConnection@42b9cbe5
+00:15:54.046 - Closing connection org.postgresql.jdbc.PgConnection@798d31cb
+00:15:54.046 - Closing connection org.postgresql.jdbc.PgConnection@7bb4dd6
+00:15:54.049 - After cleanup pool stats HikariPool-0 (total=0, inUse=0, avail=0, waiting=0)
+00:15:54.050 - Closing connection org.postgresql.jdbc.PgConnection@423b00bc
+00:15:54.052 - Closing connection org.postgresql.jdbc.PgConnection@36f68e39
+00:15:54.054 - Closing connection org.postgresql.jdbc.PgConnection@3a9c9de1
+00:15:54.126 - After fill pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+00:16:23.957 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+00:16:23.957 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+02:42:57.084 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+02:42:57.088 - Closing connection org.postgresql.jdbc.PgConnection@155e1b5
+02:42:57.088 - Closing connection org.postgresql.jdbc.PgConnection@331f9bc1
+02:42:57.102 - Closing connection org.postgresql.jdbc.PgConnection@3dd863d2
+02:42:57.102 - Closing connection org.postgresql.jdbc.PgConnection@11469b3d
+02:42:57.103 - Closing connection org.postgresql.jdbc.PgConnection@39e7f0b1
+02:42:57.103 - Closing connection org.postgresql.jdbc.PgConnection@52c5f7ef
+02:42:57.104 - Closing connection org.postgresql.jdbc.PgConnection@7ce569e9
+02:42:57.104 - Closing connection org.postgresql.jdbc.PgConnection@33eb2427
+02:42:57.104 - After cleanup pool stats HikariPool-0 (total=0, inUse=0, avail=0, waiting=0)
+02:42:57.108 - Closing connection org.postgresql.jdbc.PgConnection@4d53177b
+02:42:57.109 - Closing connection org.postgresql.jdbc.PgConnection@4bb70418
+02:42:57.213 - After fill pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+02:43:26.593 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+02:43:26.593 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+05:10:04.240 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+05:10:04.243 - Closing connection org.postgresql.jdbc.PgConnection@305f6868
+05:10:04.244 - Closing connection org.postgresql.jdbc.PgConnection@5a8e1192
+05:10:04.246 - Closing connection org.postgresql.jdbc.PgConnection@2789ffa3
+05:10:04.246 - Closing connection org.postgresql.jdbc.PgConnection@3e989013
+05:10:04.247 - Closing connection org.postgresql.jdbc.PgConnection@3aa70318
+05:10:04.248 - Closing connection org.postgresql.jdbc.PgConnection@6142ff25
+05:10:04.248 - Closing connection org.postgresql.jdbc.PgConnection@7fa59a28
+05:10:04.250 - After cleanup pool stats HikariPool-0 (total=0, inUse=0, avail=0, waiting=0)
+05:10:04.250 - Closing connection org.postgresql.jdbc.PgConnection@3472b19c
+05:10:04.251 - Closing connection org.postgresql.jdbc.PgConnection@4e10a709
+05:10:04.252 - Closing connection org.postgresql.jdbc.PgConnection@4c2dd210
+05:10:04.377 - After fill pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+05:10:34.235 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+05:10:34.235 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+07:05:13.938 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+07:05:13.949 - Closing connection org.postgresql.jdbc.PgConnection@7b8b6187
+07:05:13.949 - Closing connection org.postgresql.jdbc.PgConnection@14c4e19b
+07:05:13.959 - Closing connection org.postgresql.jdbc.PgConnection@dc60204
+07:05:13.959 - Closing connection org.postgresql.jdbc.PgConnection@1a031d73
+07:05:13.960 - Closing connection org.postgresql.jdbc.PgConnection@1e3c8aeb
+07:05:13.960 - Closing connection org.postgresql.jdbc.PgConnection@4f9fc475
+07:05:13.969 - After cleanup pool stats HikariPool-0 (total=0, inUse=0, avail=0, waiting=0)
+07:05:13.969 - Closing connection org.postgresql.jdbc.PgConnection@5b3e1748
+07:05:13.971 - Closing connection org.postgresql.jdbc.PgConnection@68c5fd8d
+07:05:13.971 - Closing connection org.postgresql.jdbc.PgConnection@6aaf8d63
+07:05:13.979 - Closing connection org.postgresql.jdbc.PgConnection@10be390f
+07:05:14.088 - After fill pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)

@@ -1,0 +1,899 @@
+22:33:16.402 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:33:16.408 - Closing connection org.postgresql.jdbc.PgConnection@7e6d1923
+22:33:16.408 - Closing connection org.postgresql.jdbc.PgConnection@3cca084f
+22:33:16.410 - Closing connection org.postgresql.jdbc.PgConnection@320de1a6
+22:33:16.410 - Closing connection org.postgresql.jdbc.PgConnection@4f60d6f7
+22:33:16.411 - Closing connection org.postgresql.jdbc.PgConnection@3632633f
+22:33:16.411 - Closing connection org.postgresql.jdbc.PgConnection@25158f9b
+22:33:16.413 - Closing connection org.postgresql.jdbc.PgConnection@7330eb9d
+22:33:16.415 - After cleanup pool stats HikariPool-0 (total=0, inUse=0, avail=0, waiting=0)
+22:33:16.415 - Closing connection org.postgresql.jdbc.PgConnection@1f541dc4
+22:33:16.416 - Closing connection org.postgresql.jdbc.PgConnection@4209df59
+22:33:16.416 - Closing connection org.postgresql.jdbc.PgConnection@678777bc
+22:33:16.488 - After fill pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:33:46.397 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:33:46.397 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:34:16.396 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:34:16.396 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:34:46.396 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:34:46.396 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:35:16.396 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:35:16.396 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:35:46.392 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:35:46.392 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:36:01.890 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Detail) [HTTP/1.1][OPTIONS] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Access-Control-Request-Method=[POST], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Access-Control-Request-Headers=[content-type], Accept=[*/*], Accept-Encoding=[gzip, deflate, sdch], Accept-Language=[en-US,en;q=0.8]}
+22:36:01.901 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Detail) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[141], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Origin=[null], Content-type=[application/json], Accept=[*/*], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+22:36:01.920 - Executing query          : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."country_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_chs", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."note", "mic_core"."winery_region"."region_img", "mic_core"."winery_region"."is_valid", "mic_core"."winery_region"."seo_url", "mic_core"."winery_region"."last_upd_mictime" from "mic_core"."winery_region" where "mic_core"."winery_region"."region_id" = ?
+22:36:01.920 - -> with bind values      : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."country_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_chs", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."note", "mic_core"."winery_region"."region_img", "mic_core"."winery_region"."is_valid", "mic_core"."winery_region"."seo_url", "mic_core"."winery_region"."last_upd_mictime" from "mic_core"."winery_region" where "mic_core"."winery_region"."region_id" = 1
+22:36:01.932 - Query executed           : Total: 13.263ms
+22:36:01.934 - Fetched result           : +---------+-------------+----------+---------------+---------------+---------------+------+----------+--------+-------+----------------+
+22:36:01.934 -                          : |region_id|region_alt_id|country_id|region_name_eng|region_name_chs|region_name_cht|note  |region_img|is_valid|seo_url|last_upd_mictime|
+22:36:01.934 -                          : +---------+-------------+----------+---------------+---------------+---------------+------+----------+--------+-------+----------------+
+22:36:01.934 -                          : |        1|            0|         9|Robertson      |{null}         |{null}         |{null}|{null}    |true    |{null} |            -503|
+22:36:01.934 -                          : +---------+-------------+----------+---------------+---------------+---------------+------+----------+--------+-------+----------------+
+22:36:01.934 - Finishing                : Total: 15.113ms, +1.849ms
+22:36:05.271 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][OPTIONS] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Access-Control-Request-Method=[POST], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Access-Control-Request-Headers=[content-type], Accept=[*/*], Accept-Encoding=[gzip, deflate, sdch], Accept-Language=[en-US,en;q=0.8]}
+22:36:05.278 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Origin=[null], Content-type=[application/json], Accept=[*/*], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+22:36:05.280 - Executing query          : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."is_valid", "mic_core"."winery_country"."country_name_eng", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."region_name_chs" from "mic_core"."winery_region" join "mic_core"."winery_country" on "mic_core"."winery_region"."country_id" = "mic_core"."winery_country"."country_id"
+22:36:05.283 - Query executed           : Total: 3.558ms
+22:36:05.284 - Fetched result           : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:36:05.284 -                          : |region_id|is_valid|country_name_eng|region_alt_id|region_name_eng  |region_name_cht|region_name_chs|
+22:36:05.284 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:36:05.284 -                          : |        0|{null}  |Unspecified     |            0|{null}           |{null}         |{null}         |
+22:36:05.284 -                          : |        2|true    |Spain           |            0|Cigales          |{null}         |{null}         |
+22:36:05.284 -                          : |        4|true    |Spain           |            0|Mentrida         |{null}         |{null}         |
+22:36:05.284 -                          : |        5|true    |Argentina       |            0|LaPampa Patagonia|{null}         |{null}         |
+22:36:05.284 -                          : |        6|true    |Portugal        |            0|Douro            |{null}         |{null}         |
+22:36:05.284 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:36:05.284 -                          : |...94 record(s) truncated...
+22:36:05.284 - Finishing                : Total: 4.245ms, +0.687ms
+22:36:16.394 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:36:16.394 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:36:46.394 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:36:46.394 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:37:16.397 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:37:16.397 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:37:46.397 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:37:46.397 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:38:16.396 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:38:16.396 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:38:46.396 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:38:46.397 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:39:16.397 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:39:16.397 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:39:46.397 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:39:46.397 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:40:16.394 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:40:16.394 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:40:46.397 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:40:46.397 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:41:16.394 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:41:16.394 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:41:46.398 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:41:46.398 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:42:16.399 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:42:16.399 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:42:46.394 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:42:46.394 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:43:16.397 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:43:16.397 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:43:46.398 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:43:46.398 - Closing connection org.postgresql.jdbc.PgConnection@ee065ec
+22:43:46.399 - Closing connection org.postgresql.jdbc.PgConnection@7c02fee8
+22:43:46.399 - Closing connection org.postgresql.jdbc.PgConnection@7004afc
+22:43:46.399 - Closing connection org.postgresql.jdbc.PgConnection@3522b96e
+22:43:46.399 - Closing connection org.postgresql.jdbc.PgConnection@72c50f18
+22:43:46.399 - Closing connection org.postgresql.jdbc.PgConnection@76fa9598
+22:43:46.399 - Closing connection org.postgresql.jdbc.PgConnection@33f80523
+22:43:46.400 - Closing connection org.postgresql.jdbc.PgConnection@5866580a
+22:43:46.400 - After cleanup pool stats HikariPool-0 (total=1, inUse=0, avail=1, waiting=0)
+22:43:46.401 - Closing connection org.postgresql.jdbc.PgConnection@20131d1
+22:43:46.451 - After fill pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:44:16.395 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:44:16.395 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:44:46.398 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:44:46.398 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:45:16.398 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:45:16.398 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:45:46.396 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:45:46.396 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:46:16.399 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:46:16.400 - After cleanup pool stats HikariPool-0 (total=9, inUse=0, avail=9, waiting=0)
+22:46:16.400 - Closing connection org.postgresql.jdbc.PgConnection@4312b203
+22:46:16.407 - After fill pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:46:46.398 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:46:46.398 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:47:16.398 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:47:16.398 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:47:46.399 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:47:46.399 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:48:16.399 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:48:16.399 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:48:46.400 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:48:46.400 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:49:16.399 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:49:16.400 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:49:46.397 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:49:46.397 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:50:16.396 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:50:16.396 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:50:46.398 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:50:46.398 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:51:16.399 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:51:16.400 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:51:46.401 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:51:46.401 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:52:16.396 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:52:16.396 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:52:46.397 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:52:46.397 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:53:16.397 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:53:16.397 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:53:46.399 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:53:46.399 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:54:08.367 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][OPTIONS] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Cache-Control=[max-age=0], Access-Control-Request-Method=[POST], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Access-Control-Request-Headers=[content-type], Accept=[*/*], Accept-Encoding=[gzip, deflate, sdch], Accept-Language=[en-US,en;q=0.8]}
+22:54:08.377 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-type=[application/json], Accept=[*/*], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+22:54:08.380 - Executing query          : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."is_valid", "mic_core"."winery_country"."country_name_eng", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."region_name_chs" from "mic_core"."winery_region" join "mic_core"."winery_country" on "mic_core"."winery_region"."country_id" = "mic_core"."winery_country"."country_id"
+22:54:08.384 - Query executed           : Total: 4.148ms
+22:54:08.384 - Fetched result           : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:54:08.384 -                          : |region_id|is_valid|country_name_eng|region_alt_id|region_name_eng  |region_name_cht|region_name_chs|
+22:54:08.384 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:54:08.384 -                          : |        0|{null}  |Unspecified     |            0|{null}           |{null}         |{null}         |
+22:54:08.384 -                          : |        2|true    |Spain           |            0|Cigales          |{null}         |{null}         |
+22:54:08.384 -                          : |        4|true    |Spain           |            0|Mentrida         |{null}         |{null}         |
+22:54:08.384 -                          : |        5|true    |Argentina       |            0|LaPampa Patagonia|{null}         |{null}         |
+22:54:08.384 -                          : |        6|true    |Portugal        |            0|Douro            |{null}         |{null}         |
+22:54:08.384 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:54:08.384 -                          : |...94 record(s) truncated...
+22:54:08.385 - Finishing                : Total: 4.726ms, +0.578ms
+22:54:11.638 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Detail) [HTTP/1.1][OPTIONS] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Access-Control-Request-Method=[POST], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Access-Control-Request-Headers=[content-type], Accept=[*/*], Accept-Encoding=[gzip, deflate, sdch], Accept-Language=[en-US,en;q=0.8]}
+22:54:11.659 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Detail) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[141], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-type=[application/json], Accept=[*/*], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+22:54:11.661 - Executing query          : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."country_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_chs", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."note", "mic_core"."winery_region"."region_img", "mic_core"."winery_region"."is_valid", "mic_core"."winery_region"."seo_url", "mic_core"."winery_region"."last_upd_mictime" from "mic_core"."winery_region" where "mic_core"."winery_region"."region_id" = ?
+22:54:11.661 - -> with bind values      : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."country_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_chs", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."note", "mic_core"."winery_region"."region_img", "mic_core"."winery_region"."is_valid", "mic_core"."winery_region"."seo_url", "mic_core"."winery_region"."last_upd_mictime" from "mic_core"."winery_region" where "mic_core"."winery_region"."region_id" = 1
+22:54:11.663 - Query executed           : Total: 1.509ms
+22:54:11.663 - Fetched result           : +---------+-------------+----------+---------------+---------------+---------------+------+----------+--------+-------+----------------+
+22:54:11.663 -                          : |region_id|region_alt_id|country_id|region_name_eng|region_name_chs|region_name_cht|note  |region_img|is_valid|seo_url|last_upd_mictime|
+22:54:11.663 -                          : +---------+-------------+----------+---------------+---------------+---------------+------+----------+--------+-------+----------------+
+22:54:11.663 -                          : |        1|            0|         9|Robertson      |{null}         |{null}         |{null}|{null}    |true    |{null} |            -503|
+22:54:11.663 -                          : +---------+-------------+----------+---------------+---------------+---------------+------+----------+--------+-------+----------------+
+22:54:11.663 - Finishing                : Total: 1.808ms, +0.299ms
+22:54:15.847 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][OPTIONS] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Access-Control-Request-Method=[POST], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Access-Control-Request-Headers=[content-type], Accept=[*/*], Accept-Encoding=[gzip, deflate, sdch], Accept-Language=[en-US,en;q=0.8]}
+22:54:15.869 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-type=[application/json], Accept=[*/*], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+22:54:15.870 - Executing query          : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."is_valid", "mic_core"."winery_country"."country_name_eng", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."region_name_chs" from "mic_core"."winery_region" join "mic_core"."winery_country" on "mic_core"."winery_region"."country_id" = "mic_core"."winery_country"."country_id"
+22:54:15.871 - Query executed           : Total: 1.605ms
+22:54:15.872 - Fetched result           : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:54:15.872 -                          : |region_id|is_valid|country_name_eng|region_alt_id|region_name_eng  |region_name_cht|region_name_chs|
+22:54:15.872 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:54:15.872 -                          : |        0|{null}  |Unspecified     |            0|{null}           |{null}         |{null}         |
+22:54:15.872 -                          : |        2|true    |Spain           |            0|Cigales          |{null}         |{null}         |
+22:54:15.872 -                          : |        4|true    |Spain           |            0|Mentrida         |{null}         |{null}         |
+22:54:15.872 -                          : |        5|true    |Argentina       |            0|LaPampa Patagonia|{null}         |{null}         |
+22:54:15.872 -                          : |        6|true    |Portugal        |            0|Douro            |{null}         |{null}         |
+22:54:15.872 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:54:15.872 -                          : |...94 record(s) truncated...
+22:54:15.872 - Finishing                : Total: 2.314ms, +0.709ms
+22:54:16.398 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:54:16.398 - Closing connection org.postgresql.jdbc.PgConnection@6718e178
+22:54:16.398 - Closing connection org.postgresql.jdbc.PgConnection@796a71a1
+22:54:16.399 - Closing connection org.postgresql.jdbc.PgConnection@371a34a4
+22:54:16.399 - Closing connection org.postgresql.jdbc.PgConnection@77ad90fc
+22:54:16.399 - After cleanup pool stats HikariPool-0 (total=2, inUse=0, avail=2, waiting=0)
+22:54:16.400 - Closing connection org.postgresql.jdbc.PgConnection@73921ad1
+22:54:16.400 - Closing connection org.postgresql.jdbc.PgConnection@36909ac7
+22:54:16.400 - Closing connection org.postgresql.jdbc.PgConnection@1cdd02cd
+22:54:16.400 - Closing connection org.postgresql.jdbc.PgConnection@7ec4bda
+22:54:16.491 - After fill pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:54:46.397 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:54:46.397 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:55:16.399 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:55:16.399 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:55:46.397 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:55:46.397 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:56:01.131 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][OPTIONS] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Access-Control-Request-Method=[POST], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Access-Control-Request-Headers=[content-type], Accept=[*/*], Accept-Encoding=[gzip, deflate, sdch], Accept-Language=[en-US,en;q=0.8]}
+22:56:01.153 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-type=[application/json], Accept=[*/*], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+22:56:01.155 - Executing query          : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."is_valid", "mic_core"."winery_country"."country_name_eng", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."region_name_chs" from "mic_core"."winery_region" join "mic_core"."winery_country" on "mic_core"."winery_region"."country_id" = "mic_core"."winery_country"."country_id"
+22:56:01.156 - Query executed           : Total: 1.455ms
+22:56:01.157 - Fetched result           : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:56:01.157 -                          : |region_id|is_valid|country_name_eng|region_alt_id|region_name_eng  |region_name_cht|region_name_chs|
+22:56:01.157 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:56:01.157 -                          : |        0|{null}  |Unspecified     |            0|{null}           |{null}         |{null}         |
+22:56:01.157 -                          : |        2|true    |Spain           |            0|Cigales          |{null}         |{null}         |
+22:56:01.157 -                          : |        4|true    |Spain           |            0|Mentrida         |{null}         |{null}         |
+22:56:01.157 -                          : |        5|true    |Argentina       |            0|LaPampa Patagonia|{null}         |{null}         |
+22:56:01.157 -                          : |        6|true    |Portugal        |            0|Douro            |{null}         |{null}         |
+22:56:01.157 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:56:01.157 -                          : |...94 record(s) truncated...
+22:56:01.157 - Finishing                : Total: 2.491ms, +1.035ms
+22:56:16.401 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:56:16.401 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:56:46.400 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:56:46.400 - After cleanup pool stats HikariPool-0 (total=9, inUse=0, avail=9, waiting=0)
+22:56:46.400 - Closing connection org.postgresql.jdbc.PgConnection@735f6771
+22:56:46.408 - After fill pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:57:10.378 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][OPTIONS] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Access-Control-Request-Method=[POST], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Access-Control-Request-Headers=[content-type], Accept=[*/*], Accept-Encoding=[gzip, deflate, sdch], Accept-Language=[en-US,en;q=0.8]}
+22:57:10.399 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-type=[application/json], Accept=[*/*], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+22:57:10.401 - Executing query          : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."is_valid", "mic_core"."winery_country"."country_name_eng", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."region_name_chs" from "mic_core"."winery_region" join "mic_core"."winery_country" on "mic_core"."winery_region"."country_id" = "mic_core"."winery_country"."country_id"
+22:57:10.402 - Query executed           : Total: 1.531ms
+22:57:10.403 - Fetched result           : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:57:10.403 -                          : |region_id|is_valid|country_name_eng|region_alt_id|region_name_eng  |region_name_cht|region_name_chs|
+22:57:10.403 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:57:10.403 -                          : |        0|{null}  |Unspecified     |            0|{null}           |{null}         |{null}         |
+22:57:10.403 -                          : |        2|true    |Spain           |            0|Cigales          |{null}         |{null}         |
+22:57:10.403 -                          : |        4|true    |Spain           |            0|Mentrida         |{null}         |{null}         |
+22:57:10.403 -                          : |        5|true    |Argentina       |            0|LaPampa Patagonia|{null}         |{null}         |
+22:57:10.403 -                          : |        6|true    |Portugal        |            0|Douro            |{null}         |{null}         |
+22:57:10.403 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:57:10.403 -                          : |...94 record(s) truncated...
+22:57:10.403 - Finishing                : Total: 2.177ms, +0.645ms
+22:57:10.979 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Detail) [HTTP/1.1][OPTIONS] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Access-Control-Request-Method=[POST], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Access-Control-Request-Headers=[content-type], Accept=[*/*], Accept-Encoding=[gzip, deflate, sdch], Accept-Language=[en-US,en;q=0.8]}
+22:57:11.005 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Detail) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[141], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-type=[application/json], Accept=[*/*], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+22:57:11.006 - Executing query          : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."country_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_chs", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."note", "mic_core"."winery_region"."region_img", "mic_core"."winery_region"."is_valid", "mic_core"."winery_region"."seo_url", "mic_core"."winery_region"."last_upd_mictime" from "mic_core"."winery_region" where "mic_core"."winery_region"."region_id" = ?
+22:57:11.006 - -> with bind values      : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."country_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_chs", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."note", "mic_core"."winery_region"."region_img", "mic_core"."winery_region"."is_valid", "mic_core"."winery_region"."seo_url", "mic_core"."winery_region"."last_upd_mictime" from "mic_core"."winery_region" where "mic_core"."winery_region"."region_id" = 1
+22:57:11.007 - Query executed           : Total: 1.131ms
+22:57:11.007 - Fetched result           : +---------+-------------+----------+---------------+---------------+---------------+------+----------+--------+-------+----------------+
+22:57:11.007 -                          : |region_id|region_alt_id|country_id|region_name_eng|region_name_chs|region_name_cht|note  |region_img|is_valid|seo_url|last_upd_mictime|
+22:57:11.007 -                          : +---------+-------------+----------+---------------+---------------+---------------+------+----------+--------+-------+----------------+
+22:57:11.007 -                          : |        1|            0|         9|Robertson      |{null}         |{null}         |{null}|{null}    |true    |{null} |            -503|
+22:57:11.007 -                          : +---------+-------------+----------+---------------+---------------+---------------+------+----------+--------+-------+----------------+
+22:57:11.007 - Finishing                : Total: 1.416ms, +0.285ms
+22:57:12.349 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-type=[application/json], Accept=[*/*], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+22:57:12.350 - Executing query          : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."is_valid", "mic_core"."winery_country"."country_name_eng", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."region_name_chs" from "mic_core"."winery_region" join "mic_core"."winery_country" on "mic_core"."winery_region"."country_id" = "mic_core"."winery_country"."country_id"
+22:57:12.352 - Query executed           : Total: 2.218ms
+22:57:12.353 - Fetched result           : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:57:12.353 -                          : |region_id|is_valid|country_name_eng|region_alt_id|region_name_eng  |region_name_cht|region_name_chs|
+22:57:12.353 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:57:12.353 -                          : |        0|{null}  |Unspecified     |            0|{null}           |{null}         |{null}         |
+22:57:12.353 -                          : |        2|true    |Spain           |            0|Cigales          |{null}         |{null}         |
+22:57:12.353 -                          : |        4|true    |Spain           |            0|Mentrida         |{null}         |{null}         |
+22:57:12.353 -                          : |        5|true    |Argentina       |            0|LaPampa Patagonia|{null}         |{null}         |
+22:57:12.353 -                          : |        6|true    |Portugal        |            0|Douro            |{null}         |{null}         |
+22:57:12.353 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:57:12.353 -                          : |...94 record(s) truncated...
+22:57:12.353 - Finishing                : Total: 2.728ms, +0.509ms
+22:57:16.402 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:57:16.402 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:57:21.311 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][OPTIONS] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Access-Control-Request-Method=[POST], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Access-Control-Request-Headers=[content-type], Accept=[*/*], Accept-Encoding=[gzip, deflate, sdch], Accept-Language=[en-US,en;q=0.8]}
+22:57:21.331 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-type=[application/json], Accept=[*/*], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+22:57:21.332 - Executing query          : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."is_valid", "mic_core"."winery_country"."country_name_eng", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."region_name_chs" from "mic_core"."winery_region" join "mic_core"."winery_country" on "mic_core"."winery_region"."country_id" = "mic_core"."winery_country"."country_id"
+22:57:21.333 - Query executed           : Total: 1.177ms
+22:57:21.334 - Fetched result           : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:57:21.334 -                          : |region_id|is_valid|country_name_eng|region_alt_id|region_name_eng  |region_name_cht|region_name_chs|
+22:57:21.334 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:57:21.334 -                          : |        0|{null}  |Unspecified     |            0|{null}           |{null}         |{null}         |
+22:57:21.334 -                          : |        2|true    |Spain           |            0|Cigales          |{null}         |{null}         |
+22:57:21.334 -                          : |        4|true    |Spain           |            0|Mentrida         |{null}         |{null}         |
+22:57:21.334 -                          : |        5|true    |Argentina       |            0|LaPampa Patagonia|{null}         |{null}         |
+22:57:21.334 -                          : |        6|true    |Portugal        |            0|Douro            |{null}         |{null}         |
+22:57:21.334 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:57:21.334 -                          : |...94 record(s) truncated...
+22:57:21.334 - Finishing                : Total: 1.948ms, +0.771ms
+22:57:33.275 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][OPTIONS] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Access-Control-Request-Method=[POST], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Access-Control-Request-Headers=[content-type], Accept=[*/*], Accept-Encoding=[gzip, deflate, sdch], Accept-Language=[en-US,en;q=0.8]}
+22:57:33.295 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-type=[application/json], Accept=[*/*], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+22:57:33.297 - Executing query          : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."is_valid", "mic_core"."winery_country"."country_name_eng", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."region_name_chs" from "mic_core"."winery_region" join "mic_core"."winery_country" on "mic_core"."winery_region"."country_id" = "mic_core"."winery_country"."country_id"
+22:57:33.298 - Query executed           : Total: 0.962ms
+22:57:33.298 - Fetched result           : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:57:33.298 -                          : |region_id|is_valid|country_name_eng|region_alt_id|region_name_eng  |region_name_cht|region_name_chs|
+22:57:33.298 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:57:33.298 -                          : |        0|{null}  |Unspecified     |            0|{null}           |{null}         |{null}         |
+22:57:33.298 -                          : |        2|true    |Spain           |            0|Cigales          |{null}         |{null}         |
+22:57:33.298 -                          : |        4|true    |Spain           |            0|Mentrida         |{null}         |{null}         |
+22:57:33.298 -                          : |        5|true    |Argentina       |            0|LaPampa Patagonia|{null}         |{null}         |
+22:57:33.298 -                          : |        6|true    |Portugal        |            0|Douro            |{null}         |{null}         |
+22:57:33.298 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:57:33.298 -                          : |...94 record(s) truncated...
+22:57:33.298 - Finishing                : Total: 1.509ms, +0.547ms
+22:57:34.386 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Cache-Control=[max-age=0], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-type=[application/json], Accept=[*/*], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+22:57:34.387 - Executing query          : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."is_valid", "mic_core"."winery_country"."country_name_eng", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."region_name_chs" from "mic_core"."winery_region" join "mic_core"."winery_country" on "mic_core"."winery_region"."country_id" = "mic_core"."winery_country"."country_id"
+22:57:34.388 - Query executed           : Total: 1.199ms
+22:57:34.388 - Fetched result           : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:57:34.388 -                          : |region_id|is_valid|country_name_eng|region_alt_id|region_name_eng  |region_name_cht|region_name_chs|
+22:57:34.388 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:57:34.388 -                          : |        0|{null}  |Unspecified     |            0|{null}           |{null}         |{null}         |
+22:57:34.388 -                          : |        2|true    |Spain           |            0|Cigales          |{null}         |{null}         |
+22:57:34.388 -                          : |        4|true    |Spain           |            0|Mentrida         |{null}         |{null}         |
+22:57:34.388 -                          : |        5|true    |Argentina       |            0|LaPampa Patagonia|{null}         |{null}         |
+22:57:34.388 -                          : |        6|true    |Portugal        |            0|Douro            |{null}         |{null}         |
+22:57:34.388 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:57:34.388 -                          : |...94 record(s) truncated...
+22:57:34.388 - Finishing                : Total: 1.789ms, +0.589ms
+22:57:46.398 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:57:46.398 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:58:16.398 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:58:16.398 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:58:16.410 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][OPTIONS] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Access-Control-Request-Method=[POST], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Access-Control-Request-Headers=[content-type], Accept=[*/*], Accept-Encoding=[gzip, deflate, sdch], Accept-Language=[en-US,en;q=0.8]}
+22:58:16.431 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-type=[application/json], Accept=[*/*], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+22:58:16.432 - Executing query          : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."is_valid", "mic_core"."winery_country"."country_name_eng", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."region_name_chs" from "mic_core"."winery_region" join "mic_core"."winery_country" on "mic_core"."winery_region"."country_id" = "mic_core"."winery_country"."country_id"
+22:58:16.433 - Query executed           : Total: 0.921ms
+22:58:16.433 - Fetched result           : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:58:16.433 -                          : |region_id|is_valid|country_name_eng|region_alt_id|region_name_eng  |region_name_cht|region_name_chs|
+22:58:16.433 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:58:16.433 -                          : |        0|{null}  |Unspecified     |            0|{null}           |{null}         |{null}         |
+22:58:16.433 -                          : |        2|true    |Spain           |            0|Cigales          |{null}         |{null}         |
+22:58:16.433 -                          : |        4|true    |Spain           |            0|Mentrida         |{null}         |{null}         |
+22:58:16.434 -                          : |        5|true    |Argentina       |            0|LaPampa Patagonia|{null}         |{null}         |
+22:58:16.434 -                          : |        6|true    |Portugal        |            0|Douro            |{null}         |{null}         |
+22:58:16.434 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:58:16.434 -                          : |...94 record(s) truncated...
+22:58:16.434 - Finishing                : Total: 1.716ms, +0.794ms
+22:58:17.692 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Cache-Control=[max-age=0], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-type=[application/json], Accept=[*/*], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+22:58:17.693 - Executing query          : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."is_valid", "mic_core"."winery_country"."country_name_eng", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."region_name_chs" from "mic_core"."winery_region" join "mic_core"."winery_country" on "mic_core"."winery_region"."country_id" = "mic_core"."winery_country"."country_id"
+22:58:17.694 - Query executed           : Total: 0.665ms
+22:58:17.694 - Fetched result           : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:58:17.694 -                          : |region_id|is_valid|country_name_eng|region_alt_id|region_name_eng  |region_name_cht|region_name_chs|
+22:58:17.694 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:58:17.694 -                          : |        0|{null}  |Unspecified     |            0|{null}           |{null}         |{null}         |
+22:58:17.694 -                          : |        2|true    |Spain           |            0|Cigales          |{null}         |{null}         |
+22:58:17.694 -                          : |        4|true    |Spain           |            0|Mentrida         |{null}         |{null}         |
+22:58:17.694 -                          : |        5|true    |Argentina       |            0|LaPampa Patagonia|{null}         |{null}         |
+22:58:17.694 -                          : |        6|true    |Portugal        |            0|Douro            |{null}         |{null}         |
+22:58:17.694 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:58:17.694 -                          : |...94 record(s) truncated...
+22:58:17.694 - Finishing                : Total: 1.076ms, +0.411ms
+22:58:25.085 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][OPTIONS] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Access-Control-Request-Method=[POST], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Access-Control-Request-Headers=[content-type], Accept=[*/*], Accept-Encoding=[gzip, deflate, sdch], Accept-Language=[en-US,en;q=0.8]}
+22:58:25.107 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-type=[application/json], Accept=[*/*], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+22:58:25.109 - Executing query          : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."is_valid", "mic_core"."winery_country"."country_name_eng", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."region_name_chs" from "mic_core"."winery_region" join "mic_core"."winery_country" on "mic_core"."winery_region"."country_id" = "mic_core"."winery_country"."country_id"
+22:58:25.109 - Query executed           : Total: 1.001ms
+22:58:25.110 - Fetched result           : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:58:25.110 -                          : |region_id|is_valid|country_name_eng|region_alt_id|region_name_eng  |region_name_cht|region_name_chs|
+22:58:25.110 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:58:25.110 -                          : |        0|{null}  |Unspecified     |            0|{null}           |{null}         |{null}         |
+22:58:25.110 -                          : |        2|true    |Spain           |            0|Cigales          |{null}         |{null}         |
+22:58:25.110 -                          : |        4|true    |Spain           |            0|Mentrida         |{null}         |{null}         |
+22:58:25.110 -                          : |        5|true    |Argentina       |            0|LaPampa Patagonia|{null}         |{null}         |
+22:58:25.110 -                          : |        6|true    |Portugal        |            0|Douro            |{null}         |{null}         |
+22:58:25.110 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+22:58:25.110 -                          : |...94 record(s) truncated...
+22:58:25.110 - Finishing                : Total: 1.617ms, +0.616ms
+22:58:46.402 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:58:46.402 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:59:16.401 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:59:16.401 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:59:46.403 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+22:59:46.403 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:00:16.400 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:00:16.401 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:00:46.402 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:00:46.402 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:01:16.398 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:01:16.398 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:01:46.398 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:01:46.398 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:02:16.399 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:02:16.400 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:02:46.399 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:02:46.399 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:03:16.404 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:03:16.404 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:03:46.402 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:03:46.402 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:04:16.400 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:04:16.400 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:04:46.403 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:04:46.403 - Closing connection org.postgresql.jdbc.PgConnection@31b9ac74
+23:04:46.403 - Closing connection org.postgresql.jdbc.PgConnection@7b27c4af
+23:04:46.404 - Closing connection org.postgresql.jdbc.PgConnection@7621b08b
+23:04:46.404 - Closing connection org.postgresql.jdbc.PgConnection@75e035bb
+23:04:46.405 - Closing connection org.postgresql.jdbc.PgConnection@71dfafdf
+23:04:46.405 - After cleanup pool stats HikariPool-0 (total=2, inUse=0, avail=2, waiting=0)
+23:04:46.405 - Closing connection org.postgresql.jdbc.PgConnection@34dd3f80
+23:04:46.406 - Closing connection org.postgresql.jdbc.PgConnection@719a9708
+23:04:46.407 - Closing connection org.postgresql.jdbc.PgConnection@523296d
+23:04:46.449 - After fill pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:05:16.404 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:05:16.404 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:05:46.400 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:05:46.400 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:06:16.404 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:06:16.404 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:06:46.403 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:06:46.403 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:07:16.401 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:07:16.402 - After cleanup pool stats HikariPool-0 (total=9, inUse=0, avail=9, waiting=0)
+23:07:16.402 - Closing connection org.postgresql.jdbc.PgConnection@4a87a67
+23:07:16.409 - After fill pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:07:46.400 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:07:46.400 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:08:16.400 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:08:16.401 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:08:46.402 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:08:46.402 - After cleanup pool stats HikariPool-0 (total=9, inUse=0, avail=9, waiting=0)
+23:08:46.402 - Closing connection org.postgresql.jdbc.PgConnection@2608345f
+23:08:46.410 - After fill pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:08:52.742 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][OPTIONS] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Cache-Control=[max-age=0], Access-Control-Request-Method=[POST], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Access-Control-Request-Headers=[content-type], Accept=[*/*], Accept-Encoding=[gzip, deflate, sdch], Accept-Language=[en-US,en;q=0.8]}
+23:08:52.758 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-type=[application/json], Accept=[*/*], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:08:52.760 - Executing query          : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."is_valid", "mic_core"."winery_country"."country_name_eng", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."region_name_chs" from "mic_core"."winery_region" join "mic_core"."winery_country" on "mic_core"."winery_region"."country_id" = "mic_core"."winery_country"."country_id"
+23:08:52.764 - Query executed           : Total: 4.23ms
+23:08:52.766 - Fetched result           : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:08:52.766 -                          : |region_id|is_valid|country_name_eng|region_alt_id|region_name_eng  |region_name_cht|region_name_chs|
+23:08:52.766 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:08:52.766 -                          : |        0|{null}  |Unspecified     |            0|{null}           |{null}         |{null}         |
+23:08:52.766 -                          : |        2|true    |Spain           |            0|Cigales          |{null}         |{null}         |
+23:08:52.766 -                          : |        4|true    |Spain           |            0|Mentrida         |{null}         |{null}         |
+23:08:52.766 -                          : |        5|true    |Argentina       |            0|LaPampa Patagonia|{null}         |{null}         |
+23:08:52.766 -                          : |        6|true    |Portugal        |            0|Douro            |{null}         |{null}         |
+23:08:52.766 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:08:52.766 -                          : |...94 record(s) truncated...
+23:08:52.766 - Finishing                : Total: 6.328ms, +2.098ms
+23:09:16.405 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:09:16.405 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:09:46.401 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:09:46.401 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:10:16.403 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:10:16.403 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:10:46.405 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:10:46.405 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:11:16.404 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:11:16.404 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:11:46.402 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:11:46.402 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:12:16.406 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:12:16.406 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:12:46.406 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:12:46.406 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:13:16.404 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:13:16.404 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:13:46.404 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:13:46.404 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:14:09.410 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][OPTIONS] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Cache-Control=[max-age=0], Access-Control-Request-Method=[POST], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Access-Control-Request-Headers=[content-type], Accept=[*/*], Accept-Encoding=[gzip, deflate, sdch], Accept-Language=[en-US,en;q=0.8]}
+23:14:09.430 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-type=[application/json], Accept=[*/*], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:14:09.433 - Executing query          : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."is_valid", "mic_core"."winery_country"."country_name_eng", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."region_name_chs" from "mic_core"."winery_region" join "mic_core"."winery_country" on "mic_core"."winery_region"."country_id" = "mic_core"."winery_country"."country_id"
+23:14:09.437 - Query executed           : Total: 3.741ms
+23:14:09.437 - Fetched result           : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:14:09.437 -                          : |region_id|is_valid|country_name_eng|region_alt_id|region_name_eng  |region_name_cht|region_name_chs|
+23:14:09.437 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:14:09.437 -                          : |        0|{null}  |Unspecified     |            0|{null}           |{null}         |{null}         |
+23:14:09.437 -                          : |        2|true    |Spain           |            0|Cigales          |{null}         |{null}         |
+23:14:09.437 -                          : |        4|true    |Spain           |            0|Mentrida         |{null}         |{null}         |
+23:14:09.437 -                          : |        5|true    |Argentina       |            0|LaPampa Patagonia|{null}         |{null}         |
+23:14:09.437 -                          : |        6|true    |Portugal        |            0|Douro            |{null}         |{null}         |
+23:14:09.437 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:14:09.437 -                          : |...94 record(s) truncated...
+23:14:09.437 - Finishing                : Total: 4.485ms, +0.743ms
+23:14:13.410 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-type=[application/json], Accept=[*/*], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:14:13.411 - Executing query          : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."is_valid", "mic_core"."winery_country"."country_name_eng", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."region_name_chs" from "mic_core"."winery_region" join "mic_core"."winery_country" on "mic_core"."winery_region"."country_id" = "mic_core"."winery_country"."country_id"
+23:14:13.415 - Query executed           : Total: 3.956ms
+23:14:13.416 - Fetched result           : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:14:13.416 -                          : |region_id|is_valid|country_name_eng|region_alt_id|region_name_eng  |region_name_cht|region_name_chs|
+23:14:13.416 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:14:13.416 -                          : |        0|{null}  |Unspecified     |            0|{null}           |{null}         |{null}         |
+23:14:13.416 -                          : |        2|true    |Spain           |            0|Cigales          |{null}         |{null}         |
+23:14:13.416 -                          : |        4|true    |Spain           |            0|Mentrida         |{null}         |{null}         |
+23:14:13.416 -                          : |        5|true    |Argentina       |            0|LaPampa Patagonia|{null}         |{null}         |
+23:14:13.416 -                          : |        6|true    |Portugal        |            0|Douro            |{null}         |{null}         |
+23:14:13.416 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:14:13.416 -                          : |...94 record(s) truncated...
+23:14:13.416 - Finishing                : Total: 4.943ms, +0.986ms
+23:14:14.365 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Cache-Control=[max-age=0], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-type=[application/json], Accept=[*/*], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:14:14.366 - Executing query          : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."is_valid", "mic_core"."winery_country"."country_name_eng", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."region_name_chs" from "mic_core"."winery_region" join "mic_core"."winery_country" on "mic_core"."winery_region"."country_id" = "mic_core"."winery_country"."country_id"
+23:14:14.367 - Query executed           : Total: 1.463ms
+23:14:14.368 - Fetched result           : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:14:14.368 -                          : |region_id|is_valid|country_name_eng|region_alt_id|region_name_eng  |region_name_cht|region_name_chs|
+23:14:14.368 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:14:14.368 -                          : |        0|{null}  |Unspecified     |            0|{null}           |{null}         |{null}         |
+23:14:14.368 -                          : |        2|true    |Spain           |            0|Cigales          |{null}         |{null}         |
+23:14:14.368 -                          : |        4|true    |Spain           |            0|Mentrida         |{null}         |{null}         |
+23:14:14.368 -                          : |        5|true    |Argentina       |            0|LaPampa Patagonia|{null}         |{null}         |
+23:14:14.368 -                          : |        6|true    |Portugal        |            0|Douro            |{null}         |{null}         |
+23:14:14.368 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:14:14.368 -                          : |...94 record(s) truncated...
+23:14:14.368 - Finishing                : Total: 2.053ms, +0.589ms
+23:14:16.402 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:14:16.402 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:14:46.404 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:14:46.404 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:15:16.405 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:15:16.405 - Closing connection org.postgresql.jdbc.PgConnection@6457abae
+23:15:16.405 - Closing connection org.postgresql.jdbc.PgConnection@ec7d112
+23:15:16.406 - Closing connection org.postgresql.jdbc.PgConnection@3eba
+23:15:16.407 - After cleanup pool stats HikariPool-0 (total=3, inUse=0, avail=3, waiting=0)
+23:15:16.407 - Closing connection org.postgresql.jdbc.PgConnection@43fba62
+23:15:16.407 - Closing connection org.postgresql.jdbc.PgConnection@413d3481
+23:15:16.408 - Closing connection org.postgresql.jdbc.PgConnection@71c232f5
+23:15:16.411 - Closing connection org.postgresql.jdbc.PgConnection@70363799
+23:15:16.447 - After fill pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:15:46.404 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:15:46.404 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:16:16.402 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:16:16.402 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:16:46.405 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:16:46.405 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:17:16.405 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:17:16.405 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:17:46.402 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:17:46.403 - After cleanup pool stats HikariPool-0 (total=9, inUse=0, avail=9, waiting=0)
+23:17:46.403 - Closing connection org.postgresql.jdbc.PgConnection@58723b78
+23:17:46.410 - After fill pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:18:16.407 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:18:16.407 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:18:34.017 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][OPTIONS] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Cache-Control=[max-age=0], Access-Control-Request-Method=[POST], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Access-Control-Request-Headers=[content-type], Accept=[*/*], Accept-Encoding=[gzip, deflate, sdch], Accept-Language=[en-US,en;q=0.8]}
+23:18:34.034 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-type=[application/json], Accept=[*/*], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:18:34.039 - Executing query          : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."is_valid", "mic_core"."winery_country"."country_name_eng", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."region_name_chs" from "mic_core"."winery_region" join "mic_core"."winery_country" on "mic_core"."winery_region"."country_id" = "mic_core"."winery_country"."country_id"
+23:18:34.041 - Query executed           : Total: 2.906ms
+23:18:34.043 - Fetched result           : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:18:34.043 -                          : |region_id|is_valid|country_name_eng|region_alt_id|region_name_eng  |region_name_cht|region_name_chs|
+23:18:34.043 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:18:34.043 -                          : |        0|{null}  |Unspecified     |            0|{null}           |{null}         |{null}         |
+23:18:34.043 -                          : |        2|true    |Spain           |            0|Cigales          |{null}         |{null}         |
+23:18:34.043 -                          : |        4|true    |Spain           |            0|Mentrida         |{null}         |{null}         |
+23:18:34.043 -                          : |        5|true    |Argentina       |            0|LaPampa Patagonia|{null}         |{null}         |
+23:18:34.043 -                          : |        6|true    |Portugal        |            0|Douro            |{null}         |{null}         |
+23:18:34.043 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:18:34.043 -                          : |...94 record(s) truncated...
+23:18:34.043 - Finishing                : Total: 4.061ms, +1.155ms
+23:18:46.406 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:18:46.406 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:19:16.403 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:19:16.404 - After cleanup pool stats HikariPool-0 (total=9, inUse=0, avail=9, waiting=0)
+23:19:16.404 - Closing connection org.postgresql.jdbc.PgConnection@91342a6
+23:19:16.411 - After fill pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:19:46.405 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:19:46.405 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:20:16.407 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:20:16.407 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:20:46.406 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:20:46.406 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:21:16.403 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:21:16.403 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:21:46.403 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:21:46.403 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:22:16.407 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:22:16.407 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:22:29.646 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][OPTIONS] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Cache-Control=[max-age=0], Access-Control-Request-Method=[POST], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Access-Control-Request-Headers=[content-type], Accept=[*/*], Accept-Encoding=[gzip, deflate, sdch], Accept-Language=[en-US,en;q=0.8]}
+23:22:29.667 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-type=[application/json], Accept=[*/*], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:22:29.670 - Executing query          : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."is_valid", "mic_core"."winery_country"."country_name_eng", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."region_name_chs" from "mic_core"."winery_region" join "mic_core"."winery_country" on "mic_core"."winery_region"."country_id" = "mic_core"."winery_country"."country_id"
+23:22:29.671 - Query executed           : Total: 1.284ms
+23:22:29.671 - Fetched result           : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:22:29.671 -                          : |region_id|is_valid|country_name_eng|region_alt_id|region_name_eng  |region_name_cht|region_name_chs|
+23:22:29.671 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:22:29.671 -                          : |        0|{null}  |Unspecified     |            0|{null}           |{null}         |{null}         |
+23:22:29.671 -                          : |        2|true    |Spain           |            0|Cigales          |{null}         |{null}         |
+23:22:29.671 -                          : |        4|true    |Spain           |            0|Mentrida         |{null}         |{null}         |
+23:22:29.671 -                          : |        5|true    |Argentina       |            0|LaPampa Patagonia|{null}         |{null}         |
+23:22:29.671 -                          : |        6|true    |Portugal        |            0|Douro            |{null}         |{null}         |
+23:22:29.671 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:22:29.671 -                          : |...94 record(s) truncated...
+23:22:29.671 - Finishing                : Total: 1.905ms, +0.621ms
+23:22:46.405 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:22:46.405 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:23:16.408 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:23:16.408 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:23:40.048 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][OPTIONS] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Cache-Control=[max-age=0], Access-Control-Request-Method=[POST], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Access-Control-Request-Headers=[content-type], Accept=[*/*], Accept-Encoding=[gzip, deflate, sdch], Accept-Language=[en-US,en;q=0.8]}
+23:23:40.060 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-type=[application/json], Accept=[*/*], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:23:40.065 - Executing query          : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."is_valid", "mic_core"."winery_country"."country_name_eng", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."region_name_chs" from "mic_core"."winery_region" join "mic_core"."winery_country" on "mic_core"."winery_region"."country_id" = "mic_core"."winery_country"."country_id"
+23:23:40.066 - Query executed           : Total: 1.024ms
+23:23:40.068 - Fetched result           : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:23:40.068 -                          : |region_id|is_valid|country_name_eng|region_alt_id|region_name_eng  |region_name_cht|region_name_chs|
+23:23:40.068 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:23:40.068 -                          : |        0|{null}  |Unspecified     |            0|{null}           |{null}         |{null}         |
+23:23:40.068 -                          : |        2|true    |Spain           |            0|Cigales          |{null}         |{null}         |
+23:23:40.068 -                          : |        4|true    |Spain           |            0|Mentrida         |{null}         |{null}         |
+23:23:40.068 -                          : |        5|true    |Argentina       |            0|LaPampa Patagonia|{null}         |{null}         |
+23:23:40.068 -                          : |        6|true    |Portugal        |            0|Douro            |{null}         |{null}         |
+23:23:40.068 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:23:40.068 -                          : |...94 record(s) truncated...
+23:23:40.068 - Finishing                : Total: 3.095ms, +2.071ms
+23:23:46.408 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:23:46.408 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:24:16.407 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:24:16.407 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:24:34.053 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][OPTIONS] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Cache-Control=[max-age=0], Access-Control-Request-Method=[POST], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Access-Control-Request-Headers=[content-type], Accept=[*/*], Accept-Encoding=[gzip, deflate, sdch], Accept-Language=[en-US,en;q=0.8]}
+23:24:34.067 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-type=[application/json], Accept=[*/*], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:24:34.068 - Executing query          : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."is_valid", "mic_core"."winery_country"."country_name_eng", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."region_name_chs" from "mic_core"."winery_region" join "mic_core"."winery_country" on "mic_core"."winery_region"."country_id" = "mic_core"."winery_country"."country_id"
+23:24:34.069 - Query executed           : Total: 0.933ms
+23:24:34.069 - Fetched result           : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:24:34.069 -                          : |region_id|is_valid|country_name_eng|region_alt_id|region_name_eng  |region_name_cht|region_name_chs|
+23:24:34.069 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:24:34.069 -                          : |        0|{null}  |Unspecified     |            0|{null}           |{null}         |{null}         |
+23:24:34.069 -                          : |        2|true    |Spain           |            0|Cigales          |{null}         |{null}         |
+23:24:34.069 -                          : |        4|true    |Spain           |            0|Mentrida         |{null}         |{null}         |
+23:24:34.069 -                          : |        5|true    |Argentina       |            0|LaPampa Patagonia|{null}         |{null}         |
+23:24:34.069 -                          : |        6|true    |Portugal        |            0|Douro            |{null}         |{null}         |
+23:24:34.069 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:24:34.069 -                          : |...94 record(s) truncated...
+23:24:34.069 - Finishing                : Total: 1.474ms, +0.541ms
+23:24:46.406 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:24:46.407 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:24:52.874 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][OPTIONS] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Access-Control-Request-Method=[POST], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Access-Control-Request-Headers=[content-type], Accept=[*/*], Accept-Encoding=[gzip, deflate, sdch], Accept-Language=[en-US,en;q=0.8]}
+23:24:52.904 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-type=[application/json], Accept=[*/*], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:24:52.905 - Executing query          : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."is_valid", "mic_core"."winery_country"."country_name_eng", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."region_name_chs" from "mic_core"."winery_region" join "mic_core"."winery_country" on "mic_core"."winery_region"."country_id" = "mic_core"."winery_country"."country_id"
+23:24:52.906 - Query executed           : Total: 1.05ms
+23:24:52.906 - Fetched result           : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:24:52.906 -                          : |region_id|is_valid|country_name_eng|region_alt_id|region_name_eng  |region_name_cht|region_name_chs|
+23:24:52.906 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:24:52.906 -                          : |        0|{null}  |Unspecified     |            0|{null}           |{null}         |{null}         |
+23:24:52.906 -                          : |        2|true    |Spain           |            0|Cigales          |{null}         |{null}         |
+23:24:52.906 -                          : |        4|true    |Spain           |            0|Mentrida         |{null}         |{null}         |
+23:24:52.906 -                          : |        5|true    |Argentina       |            0|LaPampa Patagonia|{null}         |{null}         |
+23:24:52.906 -                          : |        6|true    |Portugal        |            0|Douro            |{null}         |{null}         |
+23:24:52.906 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:24:52.906 -                          : |...94 record(s) truncated...
+23:24:52.906 - Finishing                : Total: 1.577ms, +0.526ms
+23:24:53.751 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Cache-Control=[max-age=0], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-type=[application/json], Accept=[*/*], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:24:53.752 - Executing query          : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."is_valid", "mic_core"."winery_country"."country_name_eng", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."region_name_chs" from "mic_core"."winery_region" join "mic_core"."winery_country" on "mic_core"."winery_region"."country_id" = "mic_core"."winery_country"."country_id"
+23:24:53.753 - Query executed           : Total: 1.001ms
+23:24:53.753 - Fetched result           : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:24:53.753 -                          : |region_id|is_valid|country_name_eng|region_alt_id|region_name_eng  |region_name_cht|region_name_chs|
+23:24:53.753 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:24:53.753 -                          : |        0|{null}  |Unspecified     |            0|{null}           |{null}         |{null}         |
+23:24:53.753 -                          : |        2|true    |Spain           |            0|Cigales          |{null}         |{null}         |
+23:24:53.753 -                          : |        4|true    |Spain           |            0|Mentrida         |{null}         |{null}         |
+23:24:53.753 -                          : |        5|true    |Argentina       |            0|LaPampa Patagonia|{null}         |{null}         |
+23:24:53.753 -                          : |        6|true    |Portugal        |            0|Douro            |{null}         |{null}         |
+23:24:53.753 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:24:53.753 -                          : |...94 record(s) truncated...
+23:24:53.753 - Finishing                : Total: 1.451ms, +0.45ms
+23:24:56.417 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Detail) [HTTP/1.1][OPTIONS] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Access-Control-Request-Method=[POST], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Access-Control-Request-Headers=[content-type], Accept=[*/*], Accept-Encoding=[gzip, deflate, sdch], Accept-Language=[en-US,en;q=0.8]}
+23:24:56.435 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Detail) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[141], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-type=[application/json], Accept=[*/*], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:24:56.436 - Executing query          : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."country_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_chs", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."note", "mic_core"."winery_region"."region_img", "mic_core"."winery_region"."is_valid", "mic_core"."winery_region"."seo_url", "mic_core"."winery_region"."last_upd_mictime" from "mic_core"."winery_region" where "mic_core"."winery_region"."region_id" = ?
+23:24:56.436 - -> with bind values      : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."country_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_chs", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."note", "mic_core"."winery_region"."region_img", "mic_core"."winery_region"."is_valid", "mic_core"."winery_region"."seo_url", "mic_core"."winery_region"."last_upd_mictime" from "mic_core"."winery_region" where "mic_core"."winery_region"."region_id" = 1
+23:24:56.440 - Query executed           : Total: 3.477ms
+23:24:56.441 - Fetched result           : +---------+-------------+----------+---------------+---------------+---------------+------+----------+--------+-------+----------------+
+23:24:56.441 -                          : |region_id|region_alt_id|country_id|region_name_eng|region_name_chs|region_name_cht|note  |region_img|is_valid|seo_url|last_upd_mictime|
+23:24:56.441 -                          : +---------+-------------+----------+---------------+---------------+---------------+------+----------+--------+-------+----------------+
+23:24:56.441 -                          : |        1|            0|         9|Robertson      |{null}         |{null}         |{null}|{null}    |true    |{null} |            -503|
+23:24:56.441 -                          : +---------+-------------+----------+---------------+---------------+---------------+------+----------+--------+-------+----------------+
+23:24:56.441 - Finishing                : Total: 5.363ms, +1.885ms
+23:25:00.358 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][OPTIONS] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Access-Control-Request-Method=[POST], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Access-Control-Request-Headers=[content-type], Accept=[*/*], Accept-Encoding=[gzip, deflate, sdch], Accept-Language=[en-US,en;q=0.8]}
+23:25:00.385 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-type=[application/json], Accept=[*/*], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:25:00.387 - Executing query          : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."is_valid", "mic_core"."winery_country"."country_name_eng", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."region_name_chs" from "mic_core"."winery_region" join "mic_core"."winery_country" on "mic_core"."winery_region"."country_id" = "mic_core"."winery_country"."country_id"
+23:25:00.388 - Query executed           : Total: 1.43ms
+23:25:00.389 - Fetched result           : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:25:00.389 -                          : |region_id|is_valid|country_name_eng|region_alt_id|region_name_eng  |region_name_cht|region_name_chs|
+23:25:00.389 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:25:00.389 -                          : |        0|{null}  |Unspecified     |            0|{null}           |{null}         |{null}         |
+23:25:00.389 -                          : |        2|true    |Spain           |            0|Cigales          |{null}         |{null}         |
+23:25:00.389 -                          : |        4|true    |Spain           |            0|Mentrida         |{null}         |{null}         |
+23:25:00.389 -                          : |        5|true    |Argentina       |            0|LaPampa Patagonia|{null}         |{null}         |
+23:25:00.389 -                          : |        6|true    |Portugal        |            0|Douro            |{null}         |{null}         |
+23:25:00.389 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:25:00.389 -                          : |...94 record(s) truncated...
+23:25:00.389 - Finishing                : Total: 1.976ms, +0.546ms
+23:25:16.409 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:25:16.409 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:25:46.409 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:25:46.409 - Closing connection org.postgresql.jdbc.PgConnection@d6336fa
+23:25:46.410 - Closing connection org.postgresql.jdbc.PgConnection@56f6f89e
+23:25:46.410 - Closing connection org.postgresql.jdbc.PgConnection@41e2edee
+23:25:46.410 - Closing connection org.postgresql.jdbc.PgConnection@58311c30
+23:25:46.410 - Closing connection org.postgresql.jdbc.PgConnection@5c0e93ee
+23:25:46.410 - Closing connection org.postgresql.jdbc.PgConnection@190c160b
+23:25:46.410 - Closing connection org.postgresql.jdbc.PgConnection@785f2fbc
+23:25:46.410 - After cleanup pool stats HikariPool-0 (total=3, inUse=0, avail=3, waiting=0)
+23:25:46.459 - After fill pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:26:16.408 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:26:16.408 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:26:46.405 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:26:46.405 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:27:16.405 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:27:16.405 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:27:46.409 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:27:46.409 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:28:16.409 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:28:16.410 - After cleanup pool stats HikariPool-0 (total=9, inUse=0, avail=9, waiting=0)
+23:28:16.410 - Closing connection org.postgresql.jdbc.PgConnection@65354b04
+23:28:16.418 - After fill pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:28:46.406 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:28:46.406 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:29:16.405 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:29:16.405 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:29:46.410 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:29:46.410 - After cleanup pool stats HikariPool-0 (total=9, inUse=0, avail=9, waiting=0)
+23:29:46.410 - Closing connection org.postgresql.jdbc.PgConnection@3bbdff5f
+23:29:46.418 - After fill pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:30:16.407 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:30:16.407 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:30:46.407 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:30:46.407 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:31:16.407 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:31:16.408 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:31:37.935 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Detail) [HTTP/1.1][OPTIONS] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Access-Control-Request-Method=[POST], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Access-Control-Request-Headers=[content-type], Accept=[*/*], Accept-Encoding=[gzip, deflate, sdch], Accept-Language=[en-US,en;q=0.8]}
+23:31:37.956 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Detail) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[141], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-type=[application/json], Accept=[*/*], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:31:37.958 - Executing query          : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."country_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_chs", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."note", "mic_core"."winery_region"."region_img", "mic_core"."winery_region"."is_valid", "mic_core"."winery_region"."seo_url", "mic_core"."winery_region"."last_upd_mictime" from "mic_core"."winery_region" where "mic_core"."winery_region"."region_id" = ?
+23:31:37.958 - -> with bind values      : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."country_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_chs", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."note", "mic_core"."winery_region"."region_img", "mic_core"."winery_region"."is_valid", "mic_core"."winery_region"."seo_url", "mic_core"."winery_region"."last_upd_mictime" from "mic_core"."winery_region" where "mic_core"."winery_region"."region_id" = 1
+23:31:37.959 - Query executed           : Total: 1.359ms
+23:31:37.959 - Fetched result           : +---------+-------------+----------+---------------+---------------+---------------+------+----------+--------+-------+----------------+
+23:31:37.959 -                          : |region_id|region_alt_id|country_id|region_name_eng|region_name_chs|region_name_cht|note  |region_img|is_valid|seo_url|last_upd_mictime|
+23:31:37.959 -                          : +---------+-------------+----------+---------------+---------------+---------------+------+----------+--------+-------+----------------+
+23:31:37.959 -                          : |        1|            0|         9|Robertson      |{null}         |{null}         |{null}|{null}    |true    |{null} |            -503|
+23:31:37.959 -                          : +---------+-------------+----------+---------------+---------------+---------------+------+----------+--------+-------+----------------+
+23:31:37.959 - Finishing                : Total: 1.791ms, +0.431ms
+23:31:46.410 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:31:46.410 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:32:07.188 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][OPTIONS] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Cache-Control=[max-age=0], Access-Control-Request-Method=[POST], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Access-Control-Request-Headers=[content-type], Accept=[*/*], Accept-Encoding=[gzip, deflate, sdch], Accept-Language=[en-US,en;q=0.8]}
+23:32:07.204 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-type=[application/json], Accept=[*/*], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:32:07.206 - Executing query          : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."is_valid", "mic_core"."winery_country"."country_name_eng", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."region_name_chs" from "mic_core"."winery_region" join "mic_core"."winery_country" on "mic_core"."winery_region"."country_id" = "mic_core"."winery_country"."country_id"
+23:32:07.208 - Query executed           : Total: 0.938ms
+23:32:07.209 - Fetched result           : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:32:07.209 -                          : |region_id|is_valid|country_name_eng|region_alt_id|region_name_eng  |region_name_cht|region_name_chs|
+23:32:07.209 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:32:07.209 -                          : |        0|{null}  |Unspecified     |            0|{null}           |{null}         |{null}         |
+23:32:07.209 -                          : |        2|true    |Spain           |            0|Cigales          |{null}         |{null}         |
+23:32:07.209 -                          : |        4|true    |Spain           |            0|Mentrida         |{null}         |{null}         |
+23:32:07.209 -                          : |        5|true    |Argentina       |            0|LaPampa Patagonia|{null}         |{null}         |
+23:32:07.209 -                          : |        6|true    |Portugal        |            0|Douro            |{null}         |{null}         |
+23:32:07.209 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:32:07.209 -                          : |...94 record(s) truncated...
+23:32:07.209 - Finishing                : Total: 3.469ms, +2.53ms
+23:32:10.566 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Detail) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Accept=[*/*], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-Type=[application/x-www-form-urlencoded; charset=UTF-8], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:32:12.031 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Detail) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Accept=[*/*], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-Type=[application/x-www-form-urlencoded; charset=UTF-8], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:32:12.542 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Detail) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Accept=[*/*], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-Type=[application/x-www-form-urlencoded; charset=UTF-8], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:32:12.763 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Detail) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Accept=[*/*], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-Type=[application/x-www-form-urlencoded; charset=UTF-8], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:32:13.382 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Detail) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Accept=[*/*], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-Type=[application/x-www-form-urlencoded; charset=UTF-8], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:32:13.632 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Detail) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Accept=[*/*], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-Type=[application/x-www-form-urlencoded; charset=UTF-8], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:32:13.874 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Detail) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Accept=[*/*], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-Type=[application/x-www-form-urlencoded; charset=UTF-8], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:32:14.101 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Detail) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Accept=[*/*], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-Type=[application/x-www-form-urlencoded; charset=UTF-8], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:32:14.396 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Detail) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Accept=[*/*], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-Type=[application/x-www-form-urlencoded; charset=UTF-8], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:32:14.707 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Detail) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Accept=[*/*], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-Type=[application/x-www-form-urlencoded; charset=UTF-8], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:32:14.937 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Detail) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Accept=[*/*], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-Type=[application/x-www-form-urlencoded; charset=UTF-8], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:32:15.170 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Detail) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Accept=[*/*], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-Type=[application/x-www-form-urlencoded; charset=UTF-8], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:32:15.400 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Detail) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Accept=[*/*], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-Type=[application/x-www-form-urlencoded; charset=UTF-8], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:32:15.635 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Detail) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Accept=[*/*], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-Type=[application/x-www-form-urlencoded; charset=UTF-8], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:32:15.887 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Detail) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Accept=[*/*], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-Type=[application/x-www-form-urlencoded; charset=UTF-8], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:32:16.133 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Detail) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Accept=[*/*], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-Type=[application/x-www-form-urlencoded; charset=UTF-8], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:32:16.410 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:32:16.411 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:32:16.432 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Detail) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Accept=[*/*], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-Type=[application/x-www-form-urlencoded; charset=UTF-8], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:32:16.708 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Detail) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Accept=[*/*], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-Type=[application/x-www-form-urlencoded; charset=UTF-8], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:32:16.907 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Detail) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Accept=[*/*], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-Type=[application/x-www-form-urlencoded; charset=UTF-8], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:32:46.405 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:32:46.406 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:32:59.836 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][OPTIONS] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Cache-Control=[max-age=0], Access-Control-Request-Method=[POST], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Access-Control-Request-Headers=[content-type], Accept=[*/*], Accept-Encoding=[gzip, deflate, sdch], Accept-Language=[en-US,en;q=0.8]}
+23:32:59.857 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-type=[application/json], Accept=[*/*], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:32:59.858 - Executing query          : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."is_valid", "mic_core"."winery_country"."country_name_eng", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."region_name_chs" from "mic_core"."winery_region" join "mic_core"."winery_country" on "mic_core"."winery_region"."country_id" = "mic_core"."winery_country"."country_id"
+23:32:59.859 - Query executed           : Total: 0.947ms
+23:32:59.859 - Fetched result           : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:32:59.859 -                          : |region_id|is_valid|country_name_eng|region_alt_id|region_name_eng  |region_name_cht|region_name_chs|
+23:32:59.859 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:32:59.859 -                          : |        0|{null}  |Unspecified     |            0|{null}           |{null}         |{null}         |
+23:32:59.859 -                          : |        2|true    |Spain           |            0|Cigales          |{null}         |{null}         |
+23:32:59.859 -                          : |        4|true    |Spain           |            0|Mentrida         |{null}         |{null}         |
+23:32:59.859 -                          : |        5|true    |Argentina       |            0|LaPampa Patagonia|{null}         |{null}         |
+23:32:59.859 -                          : |        6|true    |Portugal        |            0|Douro            |{null}         |{null}         |
+23:32:59.859 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:32:59.859 -                          : |...94 record(s) truncated...
+23:32:59.859 - Finishing                : Total: 1.452ms, +0.504ms
+23:33:02.996 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Detail) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Accept=[*/*], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-Type=[application/x-www-form-urlencoded; charset=UTF-8], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:33:16.153 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][OPTIONS] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Cache-Control=[max-age=0], Access-Control-Request-Method=[POST], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Access-Control-Request-Headers=[content-type], Accept=[*/*], Accept-Encoding=[gzip, deflate, sdch], Accept-Language=[en-US,en;q=0.8]}
+23:33:16.172 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-type=[application/json], Accept=[*/*], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:33:16.177 - Executing query          : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."is_valid", "mic_core"."winery_country"."country_name_eng", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."region_name_chs" from "mic_core"."winery_region" join "mic_core"."winery_country" on "mic_core"."winery_region"."country_id" = "mic_core"."winery_country"."country_id"
+23:33:16.178 - Query executed           : Total: 1.19ms
+23:33:16.179 - Fetched result           : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:33:16.179 -                          : |region_id|is_valid|country_name_eng|region_alt_id|region_name_eng  |region_name_cht|region_name_chs|
+23:33:16.179 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:33:16.179 -                          : |        0|{null}  |Unspecified     |            0|{null}           |{null}         |{null}         |
+23:33:16.179 -                          : |        2|true    |Spain           |            0|Cigales          |{null}         |{null}         |
+23:33:16.179 -                          : |        4|true    |Spain           |            0|Mentrida         |{null}         |{null}         |
+23:33:16.179 -                          : |        5|true    |Argentina       |            0|LaPampa Patagonia|{null}         |{null}         |
+23:33:16.179 -                          : |        6|true    |Portugal        |            0|Douro            |{null}         |{null}         |
+23:33:16.179 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:33:16.179 -                          : |...94 record(s) truncated...
+23:33:16.179 - Finishing                : Total: 1.916ms, +0.726ms
+23:33:16.406 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:33:16.406 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:33:19.344 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Detail) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Accept=[*/*], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-Type=[application/x-www-form-urlencoded; charset=UTF-8], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:33:46.410 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:33:46.410 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:34:16.406 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:34:16.406 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:34:46.407 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:34:46.407 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:34:46.421 - Closing connection org.postgresql.jdbc.PgConnection@2fbef685
+23:35:16.409 - Before cleanup pool stats HikariPool-0 (total=9, inUse=0, avail=9, waiting=0)
+23:35:16.409 - After cleanup pool stats HikariPool-0 (total=9, inUse=0, avail=9, waiting=0)
+23:35:16.417 - After fill pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:35:46.408 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:35:46.408 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:36:16.408 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:36:16.409 - Closing connection org.postgresql.jdbc.PgConnection@30ffb169
+23:36:16.409 - Closing connection org.postgresql.jdbc.PgConnection@27729ee7
+23:36:16.409 - Closing connection org.postgresql.jdbc.PgConnection@70d169c7
+23:36:16.411 - Closing connection org.postgresql.jdbc.PgConnection@29b57479
+23:36:16.411 - After cleanup pool stats HikariPool-0 (total=3, inUse=0, avail=3, waiting=0)
+23:36:16.412 - Closing connection org.postgresql.jdbc.PgConnection@2d8af597
+23:36:16.412 - Closing connection org.postgresql.jdbc.PgConnection@68887e42
+23:36:16.414 - Closing connection org.postgresql.jdbc.PgConnection@5b3e5012
+23:36:16.458 - After fill pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:36:46.408 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:36:46.408 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:37:16.408 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:37:16.408 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:37:46.407 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:37:46.407 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:38:13.928 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][OPTIONS] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Cache-Control=[max-age=0], Access-Control-Request-Method=[POST], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Access-Control-Request-Headers=[content-type], Accept=[*/*], Accept-Encoding=[gzip, deflate, sdch], Accept-Language=[en-US,en;q=0.8]}
+23:38:13.947 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-type=[application/json], Accept=[*/*], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:38:13.949 - Executing query          : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."is_valid", "mic_core"."winery_country"."country_name_eng", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."region_name_chs" from "mic_core"."winery_region" join "mic_core"."winery_country" on "mic_core"."winery_region"."country_id" = "mic_core"."winery_country"."country_id"
+23:38:13.954 - Query executed           : Total: 5.021ms
+23:38:13.955 - Fetched result           : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:38:13.955 -                          : |region_id|is_valid|country_name_eng|region_alt_id|region_name_eng  |region_name_cht|region_name_chs|
+23:38:13.955 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:38:13.955 -                          : |        0|{null}  |Unspecified     |            0|{null}           |{null}         |{null}         |
+23:38:13.955 -                          : |        2|true    |Spain           |            0|Cigales          |{null}         |{null}         |
+23:38:13.955 -                          : |        4|true    |Spain           |            0|Mentrida         |{null}         |{null}         |
+23:38:13.955 -                          : |        5|true    |Argentina       |            0|LaPampa Patagonia|{null}         |{null}         |
+23:38:13.955 -                          : |        6|true    |Portugal        |            0|Douro            |{null}         |{null}         |
+23:38:13.955 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:38:13.955 -                          : |...94 record(s) truncated...
+23:38:13.955 - Finishing                : Total: 5.938ms, +0.917ms
+23:38:16.412 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:38:16.412 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:38:46.409 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:38:46.409 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:39:16.408 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:39:16.408 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:39:19.485 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][OPTIONS] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Cache-Control=[max-age=0], Access-Control-Request-Method=[POST], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Access-Control-Request-Headers=[content-type], Accept=[*/*], Accept-Encoding=[gzip, deflate, sdch], Accept-Language=[en-US,en;q=0.8]}
+23:39:19.504 - ALLfirst REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Summary) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[129], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-type=[application/json], Accept=[*/*], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+23:39:19.506 - Executing query          : select "mic_core"."winery_region"."region_id", "mic_core"."winery_region"."is_valid", "mic_core"."winery_country"."country_name_eng", "mic_core"."winery_region"."region_alt_id", "mic_core"."winery_region"."region_name_eng", "mic_core"."winery_region"."region_name_cht", "mic_core"."winery_region"."region_name_chs" from "mic_core"."winery_region" join "mic_core"."winery_country" on "mic_core"."winery_region"."country_id" = "mic_core"."winery_country"."country_id"
+23:39:19.507 - Query executed           : Total: 1.622ms
+23:39:19.508 - Fetched result           : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:39:19.508 -                          : |region_id|is_valid|country_name_eng|region_alt_id|region_name_eng  |region_name_cht|region_name_chs|
+23:39:19.508 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:39:19.508 -                          : |        0|{null}  |Unspecified     |            0|{null}           |{null}         |{null}         |
+23:39:19.508 -                          : |        2|true    |Spain           |            0|Cigales          |{null}         |{null}         |
+23:39:19.508 -                          : |        4|true    |Spain           |            0|Mentrida         |{null}         |{null}         |
+23:39:19.508 -                          : |        5|true    |Argentina       |            0|LaPampa Patagonia|{null}         |{null}         |
+23:39:19.508 -                          : |        6|true    |Portugal        |            0|Douro            |{null}         |{null}         |
+23:39:19.508 -                          : +---------+--------+----------------+-------------+-----------------+---------------+---------------+
+23:39:19.508 -                          : |...94 record(s) truncated...
+23:39:19.508 - Finishing                : Total: 2.227ms, +0.604ms
+23:39:46.411 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:39:46.411 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:40:16.412 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:40:16.413 - After cleanup pool stats HikariPool-0 (total=9, inUse=0, avail=9, waiting=0)
+23:40:16.413 - Closing connection org.postgresql.jdbc.PgConnection@240c0c96
+23:40:16.421 - After fill pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:40:46.411 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:40:46.411 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:41:16.412 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:41:16.412 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:41:46.412 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:41:46.412 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:42:16.413 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:42:16.413 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:42:46.413 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:42:46.413 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:43:16.411 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:43:16.411 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:43:46.413 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:43:46.413 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:44:16.411 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:44:16.411 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:44:46.410 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:44:46.410 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:45:16.411 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:45:16.411 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:45:46.410 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:45:46.411 - After cleanup pool stats HikariPool-0 (total=9, inUse=0, avail=9, waiting=0)
+23:45:46.411 - Closing connection org.postgresql.jdbc.PgConnection@d099b1b
+23:45:46.421 - After fill pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:46:16.412 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:46:16.412 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:46:46.413 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:46:46.414 - Closing connection org.postgresql.jdbc.PgConnection@519b62c3
+23:46:46.415 - Closing connection org.postgresql.jdbc.PgConnection@3b4ecb8c
+23:46:46.415 - Closing connection org.postgresql.jdbc.PgConnection@35892295
+23:46:46.415 - Closing connection org.postgresql.jdbc.PgConnection@33b1987f
+23:46:46.415 - Closing connection org.postgresql.jdbc.PgConnection@31b6a0fc
+23:46:46.417 - Closing connection org.postgresql.jdbc.PgConnection@74b428ae
+23:46:46.417 - After cleanup pool stats HikariPool-0 (total=3, inUse=0, avail=3, waiting=0)
+23:46:46.418 - Closing connection org.postgresql.jdbc.PgConnection@396b9f1f
+23:46:46.462 - After fill pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:47:16.411 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:47:16.411 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:47:46.411 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:47:46.411 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:48:16.412 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:48:16.412 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:48:46.413 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:48:46.413 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:49:16.413 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:49:16.413 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:49:46.414 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:49:46.415 - After cleanup pool stats HikariPool-0 (total=9, inUse=0, avail=9, waiting=0)
+23:49:46.415 - Closing connection org.postgresql.jdbc.PgConnection@16b5eae1
+23:49:46.422 - After fill pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:50:16.415 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:50:16.415 - After cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:50:46.413 - Before cleanup pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)
+23:50:46.414 - After cleanup pool stats HikariPool-0 (total=9, inUse=0, avail=9, waiting=0)
+23:50:46.414 - Closing connection org.postgresql.jdbc.PgConnection@24671424
+23:50:46.422 - After fill pool stats HikariPool-0 (total=10, inUse=0, avail=10, waiting=0)

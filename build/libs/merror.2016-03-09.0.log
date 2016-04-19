@@ -1,0 +1,27 @@
+10:04:43.447 - ERRserver(Expect {header : ... } %%% null) REQUEST Received = (0:0:0:0:0:0:0:1)(/1/eng/a/WineryRegion/Detail) [HTTP/1.1][POST] {0:0:0:0:0:0:0:1}<<<HEADER>>>{Host=[localhost:8888], Connection=[keep-alive], Content-Length=[2], Origin=[null], User-Agent=[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36], Content-type=[application/json], Accept=[*/*], Accept-Encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8]}
+java.lang.RuntimeException: Expect {header : ... }
+	at myicellar.api.admin.util.MicRequUtil.parseRequHdr(MicRequUtil.java:37)
+	at myicellar.api.admin.handler.WineryRegionHandlerQuery.lambda$handle$96(WineryRegionHandlerQuery.java:34)
+	at ratpack.exec.Promise.lambda$null$9(Promise.java:303)
+	at ratpack.exec.Downstream$1.success(Downstream.java:73)
+	at ratpack.exec.Promise.lambda$null$9(Promise.java:304)
+	at ratpack.exec.Downstream$1.success(Downstream.java:73)
+	at ratpack.exec.Promise.lambda$null$9(Promise.java:304)
+	at ratpack.exec.Downstream$1.success(Downstream.java:73)
+	at ratpack.exec.internal.DefaultExecution$2.lambda$success$1(DefaultExecution.java:161)
+	at ratpack.exec.internal.DefaultExecution$SingleEventExecStream.exec(DefaultExecution.java:419)
+	at ratpack.exec.internal.DefaultExecution.exec(DefaultExecution.java:248)
+	at ratpack.exec.internal.DefaultExecution.intercept(DefaultExecution.java:240)
+	at ratpack.exec.internal.DefaultExecution.drain(DefaultExecution.java:220)
+	at ratpack.exec.internal.DefaultExecution.<init>(DefaultExecution.java:96)
+	at ratpack.exec.internal.DefaultExecController$1.lambda$start$0(DefaultExecController.java:172)
+	at io.netty.util.concurrent.PromiseTask.run(PromiseTask.java:73)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:339)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:356)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:742)
+	at ratpack.exec.internal.DefaultExecController$ExecControllerBindingThreadFactory.lambda$newThread$0(DefaultExecController.java:113)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException: null
+	at myicellar.api.admin.util.MicRequUtil.parseRequHdr(MicRequUtil.java:33)
+	... 21 common frames omitted

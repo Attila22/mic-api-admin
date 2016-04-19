@@ -1,0 +1,35 @@
+group 'mic-api-admin'
+version '0.00.01'
+
+apply plugin: 'io.ratpack.ratpack-java'
+apply plugin: 'com.github.johnrengelman.shadow'
+
+sourceCompatibility = 1.8
+
+repositories {
+    jcenter()
+}
+
+mainClassName = "myicellar.api.admin.RootEndPt"
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "io.ratpack:ratpack-gradle:1.+"
+        classpath "com.github.jengelman.gradle.plugins:shadow:1.+"
+    }
+}
+
+dependencies {
+    runtime "ch.qos.logback:logback-core:1.+"
+    runtime "ch.qos.logback:logback-classic:1.+"
+    runtime "org.postgresql:postgresql:9.4.1207"
+    compile "org.jooq:jooq:3.7.+"
+    compile ratpack.dependency("hikari")
+}
